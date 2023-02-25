@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Sign Up Form</title>
+  <style>
+    fieldset
+    {
+      background-color: antiquewhite;
+      border: 2px solid burlywood;
+      height: 110vh;
+      }
+    legend{
+      text-align: center;
+      border: 2px solid burlywood;
+      background-color: antiquewhite;
+    }
+    form{
+      text-align: center;
+    }
+    
+    input:hover
+    {
+      border: antiquewhite;
+      background-color: palevioletred;
+    }
+    #sub:hover
+    {
+      background-color: palevioletred;
+    }
+
+   
+  </style>
+</head>
+<body>
+  <fieldset>
+    <legend>Personal Information</legend>
+  <form>
+    <label for="name">Username</label><br>
+    <input type="text" placeholder="Enter Your name" id="name" required>
+    <br><br>
+    <label for="email">Email</label><br>
+    <input type="email" placeholder="Enter your mail" id="email" required>
+    <br><br>
+    <label for="password">Password</label><br>
+    <input type="password" placeholder="Enter password" id="password" required>
+    <br><br>
+    <label for="number">Phone Number</label><br>
+    <input type="tel" placeholder="Personal Number" id="number"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+    <small>Format: 012-345-6789</small>
+    <br><br>
+    <label for="date">Date Of Birth</label><br>
+    <input type="date" placeholder="dd--mm--yy" id="date" required>
+    <br><br>
+    <input type="checkbox" name="TOS" id="TOS" required>
+    <label for="TOS">I Agree To All The Term and Conditions Of This Form</label>
+    <br><br>
+     <input type="checkbox" name="TOS1" id="TOS1" required>
+    <label for="TOS1">I am accepting to fill the above information correctly</label>
+    <br><br>
+    <input type="submit" value="Sign Up" id="sub">
+    </fieldset>
+  </form>
+  
+</body>
+</html>
